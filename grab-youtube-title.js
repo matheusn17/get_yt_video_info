@@ -51,7 +51,7 @@ function getVideoId(video_url, key, cb) {
 }
 
 //This one work only with ID
-function getVideoTitle(id, key, cb) {
+function getVideoInfo(id, key, cb) {
 
     assert(typeof id === 'string', 'get-youtube-title: id must be string')
     assert(typeof key === 'string', 'get-youtube-title: key must be string')
@@ -99,7 +99,7 @@ function getVideoTitle(id, key, cb) {
 //get the link from the 2nd argument
 getVideoId(process.argv[2], DEFAULT_KEY, function(err, id) {
     if (id) {
-        getVideoTitle(id, DEFAULT_KEY, function(err, title, description) {
+        getVideoInfo(id, DEFAULT_KEY, function(err, title, description) {
             console.log(title, description);
         })
     } else {
