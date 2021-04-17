@@ -2,8 +2,7 @@ var assert = require('assert')
 var qs = require('querystring')
 var https = require('https')
 
-// Use your own Youtube API key. This one will expire soon.
-var DEFAULT_KEY = "AIzaSyCpDOrNTgY6XAli7JbB8zvRngB-9Avn_C4"
+var DEFAULT_KEY = "Put your Google API Key here"
 
 //We first get the video ID to make things simple
 
